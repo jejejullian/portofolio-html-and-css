@@ -1,0 +1,394 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    position: absolute;
+    left: 0;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(255, 255, 255, 0.742);
+    border-bottom: 2px solid rgb(124, 194, 255);;
+}
+
+.logo{
+    cursor: pointer;
+    max-height: 30px;     
+    max-width: 100px; 
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+display: inline-block;
+padding: 0 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    font-weight: bold;
+}
+
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #f4f4f4;
+}
+
+button:hover{
+    opacity: 80%;
+    font-weight: bold;
+}
+
+.home-image{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 100%;
+    float: right;
+    height: 100%;
+    bottom: 0;
+    margin-left: 60%;
+}
+
+.home-image img{
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 80%;
+    margin-top: 60px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.home-image .me{
+    position: absolute;
+    width: 40%;
+    top: -10%;
+    object-fit: cover;
+    object-position: top left;
+    background: url('./image/shape.png') no-repeat center center;
+    background-size: 80%;
+    background-position: 0px 80px;
+}
+
+.home-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./image/blob\ \(1\).svg');
+    background-repeat: no-repeat;
+    background-position: -10px -250px;
+    background-size: 52%;
+    background-color: #7bc2ff;
+    height: 90vh;
+}
+
+.home-content{
+    width: 40%;
+    float: left;
+    margin-left: -50%;
+    position: relative;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+  
+.home-content p {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+  
+
+.social {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    z-index: 1;
+}
+  
+.social a {
+    font-size: 0px;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 2;
+}
+  
+.social a:hover {
+    opacity: 70%;
+}
+
+
+.about-section{
+    position: absolute;
+    width: 100%;
+    float: left;
+    height: 50vh;
+    background-image: url('./image/shape\ 4.png');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 30px;
+}
+
+.about-content{
+    width: 50%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-content h1{
+ position: absolute;
+ font-size: 30px;
+ font-family: "Montserrat", sans-serif;;
+ font-weight: bolder;
+ top: 35%;
+ left: 20%;
+ float: left;
+ margin: 0;
+ text-align: left;
+ border-bottom: 2px solid;
+ border-bottom-style: double;
+ border-bottom-width: 5px;
+
+}
+
+.about-content p{
+    width: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    padding: 10px;
+    top: 20%;
+    left: 50%;
+    margin: 0;
+    text-align: justify;
+}
+
+.service-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    position: absolute;
+    top: 150%;
+    height: auto;
+    background-color: #FFC234;
+    background-image: url('./image/blob\ \(7\).svg');
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: -85rem -50rem;
+    background-origin: content-box;
+}
+
+.service-content {
+    text-align: center;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.service-content h2{
+    position: absolute;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.service-content p{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+
+  
+.conten-box {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+  
+.card {
+    width: 300px;
+    height: 250px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.card:hover{
+    background-color: #2f2f2f;
+    color: white;
+}
+  
+.card h2 {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+  
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.cv-btn {
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #7bc2ff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cv-btn:hover{
+    background-color: rgb(73, 170, 254);
+}
+
+@media screen and (max-width: 480px) {
+    .nav_links{
+        display: none;
+    }
+
+    .home-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+    .home-image .me {
+    width: 100%;
+    height: auto;
+    left: 60%;
+    }
+
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 300px;
+        width: 100%;
+        left: 25%;
+      }
+      
+      .home-content h1{
+        width: 80%;
+        font-size: 40px;
+      }
+      
+      .home-content p{
+        width: 80%;
+        font-size: 20px;
+      }
+
+      .social{
+        width: 80%;
+      }
+
+      .about-section{
+        background-size: 0px;
+      }
+
+      .about-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      .about-content h1{
+        font-size: 30px;
+        top: 50px;
+        left: 35%;
+      }
+      
+      .about-content p{
+        width: 80%;
+        font-size: 20px;
+        left: 10%;
+      }
+      
+      .about-content a{
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      .service-content{
+        width: 100%;
+      }
+     
+      .service-content h2{
+        font-size: 30px;
+      }
+
+      .service-content p{
+        font-size: 24px;
+      }
+
+      .conten-box{
+        width: 100%;
+      }
+      
+      
+
+}
+
