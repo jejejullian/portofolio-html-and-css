@@ -305,17 +305,22 @@ button:hover{
         display: none;
     }
 
+    .home-section{
+        height: auto;
+    }
+
     .home-image{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
 }
 
     .home-image .me {
-    width: 100%;
+    width: 80%;
     height: auto;
-    left: 60%;
+    margin-top: 60px;
+    margin-left: -100px;
     }
 
     .home-content{
@@ -323,50 +328,57 @@ button:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 300px;
+        margin-top: 400px;
+        margin-bottom: 100px;
         width: 100%;
         left: 25%;
       }
       
       .home-content h1{
+        text-align: center;
         width: 80%;
-        font-size: 40px;
+        font-size: 20px;
       }
       
       .home-content p{
+        text-align: center;
         width: 80%;
-        font-size: 20px;
+        font-size: 10px;
       }
 
       .social{
         width: 80%;
       }
-
       .about-section{
         background-size: 0px;
+        height: auto;
       }
 
       .about-content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
       }
       
       .about-content h1{
-        font-size: 30px;
+        font-size: 20px;
+        text-align: center;
         top: 50px;
-        left: 35%;
+        left: auto;
       }
       
       .about-content p{
         width: 80%;
-        font-size: 20px;
+        font-size: 12px;
+        top: 100%;
         left: 10%;
+        margin: 0;
       }
       
       .about-content a{
+        top: 200%;
         margin-top: 50px;
         margin-left: 50px;
         margin-right: 50px;
@@ -381,11 +393,22 @@ button:hover{
       }
 
       .service-content p{
-        font-size: 24px;
+        font-size: 12px;
       }
 
       .conten-box{
         width: 100%;
+      }
+
+      .conten-box .card{
+        width: 70%;
+      }
+
+      .conten-box .card h2{
+        font-size: 20px;
+      }
+      .conten-box .card p{
+        font-size: 14px;
       }
       
       
