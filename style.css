@@ -301,6 +301,11 @@ button:hover{
 }
 
 @media screen and (max-width: 480px) {
+   
+
+}
+
+@media screen and (max-width: 479px){
     .nav_links{
         display: none;
     }
@@ -412,6 +417,5 @@ button:hover{
       }
       
       
-
 }
 
